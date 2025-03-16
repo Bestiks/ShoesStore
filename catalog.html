@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - ShoesStore</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">ShoesStore</a>
+                <ul class="nav-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html" class="active">Каталог</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="cart.html" class="cart-link"><i class="fas fa-shopping-cart"></i> Корзина</a></li>
+                </ul>
+                <div class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="catalog-page">
+        <div class="container">
+            <section class="catalog-header">
+                <h1>Каталог обуви</h1>
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="category">Категория:</label>
+                        <select id="category">
+                            <option value="all">Все</option>
+                            <option value="men">Мужская обувь</option>
+                            <option value="women">Женская обувь</option>
+                            <option value="sport">Спортивная обувь</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="price">Цена:</label>
+                        <select id="price">
+                            <option value="all">Все</option>
+                            <option value="0-5000">До 5000 ₽</option>
+                            <option value="5000-10000">5000 - 10000 ₽</option>
+                            <option value="10000+">От 10000 ₽</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="sort">Сортировка:</label>
+                        <select id="sort">
+                            <option value="popular">По популярности</option>
+                            <option value="price-asc">По возрастанию цены</option>
+                            <option value="price-desc">По убыванию цены</option>
+                            <option value="new">Сначала новинки</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <section class="catalog-grid">
+                <div class="product-card" data-category="men" data-popular="95" data-date="20240301">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1478146896981-b80fe463b330?auto=format&fit=crop&q=80" alt="Классические туфли Oxford">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-small"><i class="fas fa-eye"></i> Быстрый просмотр</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Классические туфли Oxford</h3>
+                        <p class="price">12 990</p>
+                        <button class="add-to-cart" data-product-id="1"><i class="fas fa-shopping-cart"></i> В корзину</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="women" data-popular="88" data-date="20240315">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&q=80" alt="Ботинки Chelsea Premium">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-small"><i class="fas fa-eye"></i> Быстрый просмотр</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ботинки Chelsea Premium</h3>
+                        <p class="price">9 990</p>
+                        <button class="add-to-cart" data-product-id="2"><i class="fas fa-shopping-cart"></i> В корзину</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="sport" data-popular="92" data-date="20240310">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80" alt="Кроссовки Nike Air Max">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-small"><i class="fas fa-eye"></i> Быстрый просмотр</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Кроссовки Nike Air Max</h3>
+                        <p class="price">14 990</p>
+                        <button class="add-to-cart" data-product-id="3"><i class="fas fa-shopping-cart"></i> В корзину</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="men" data-popular="85" data-date="20240320">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&q=80" alt="Ботинки Timberland Pro">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-small"><i class="fas fa-eye"></i> Быстрый просмотр</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ботинки Timberland Pro</h3>
+                        <p class="price">16 990</p>
+                        <button class="add-to-cart" data-product-id="4"><i class="fas fa-shopping-cart"></i> В корзину</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="women" data-popular="90" data-date="20240305">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&q=80" alt="Кроссовки Adidas Originals">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-small"><i class="fas fa-eye"></i> Быстрый просмотр</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Кроссовки Adidas Originals</h3>
+                        <p class="price">11 990</p>
+                        <button class="add-to-cart" data-product-id="5"><i class="fas fa-shopping-cart"></i> В корзину</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="sport" data-popular="87" data-date="20240318">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&q=80" alt="Беговые кроссовки Nike Zoom">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-small"><i class="fas fa-eye"></i> Быстрый просмотр</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Беговые кроссовки Nike Zoom</h3>
+                        <p class="price">13 990</p>
+                        <button class="add-to-cart" data-product-id="6"><i class="fas fa-shopping-cart"></i> В корзину</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>О компании</h4>
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Магазины</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Помощь</h4>
+                    <ul>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Возврат</a></li>
+                        <li><a href="#">Размерная сетка</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><a href="tel:+78001234567">8 (800) 123-45-67</a></li>
+                        <li><a href="mailto:info@shoesstore.ru">info@shoesstore.ru</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShoesStore. Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+</html>

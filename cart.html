@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина - ShoesStore</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">ShoesStore</a>
+                <ul class="nav-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="cart.html" class="cart-link active"><i class="fas fa-shopping-cart"></i> Корзина</a></li>
+                </ul>
+                <div class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cart-page">
+        <div class="container">
+            <h1>Корзина</h1>
+            
+            <div class="cart-content">
+                <div class="cart-items">
+                    <!-- Товары будут добавляться динамически через JavaScript -->
+                </div>
+
+                <div class="cart-summary">
+                    <h2>Итого</h2>
+                    <div class="summary-item">
+                        <span>Товары:</span>
+                        <span class="cart-subtotal">0 ₽</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Доставка:</span>
+                        <span class="delivery-cost">0 ₽</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Всего:</span>
+                        <span class="cart-total">0 ₽</span>
+                    </div>
+                    <button class="checkout-btn">Оформить заказ</button>
+                </div>
+            </div>
+
+            <div class="empty-cart" style="display: none;">
+                <i class="fas fa-shopping-cart"></i>
+                <h2>Ваша корзина пуста</h2>
+                <p>Добавьте товары из каталога</p>
+                <a href="catalog.html" class="btn">Перейти в каталог</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>О компании</h4>
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Магазины</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Помощь</h4>
+                    <ul>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Возврат</a></li>
+                        <li><a href="#">Размерная сетка</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><a href="tel:+78001234567">8 (800) 123-45-67</a></li>
+                        <li><a href="mailto:info@shoesstore.ru">info@shoesstore.ru</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShoesStore. Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
